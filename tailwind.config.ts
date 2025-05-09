@@ -1,6 +1,5 @@
 
 import { defineConfig } from "tailwindcss";
-import { fontFamily } from "tailwindcss/defaultTheme";
 
 export default defineConfig({
   darkMode: ["class"],
@@ -83,7 +82,7 @@ export default defineConfig({
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        sans: ["var(--font-sans)", ...fontFamily.sans],
+        sans: ["var(--font-sans)", "sans-serif"],
         mono: ["Share Tech Mono", "monospace"],
       },
       keyframes: {
@@ -114,5 +113,5 @@ export default defineConfig({
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
+  plugins: [require("tailwindcss-animate")],
 });
