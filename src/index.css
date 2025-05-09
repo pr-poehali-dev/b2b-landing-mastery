@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -91,61 +93,6 @@
   }
 
   body {
-    @apply bg-black text-foreground;
-  }
-}
-
-@font-face {
-  font-family: 'Cyber';
-  src: url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
-}
-
-@layer components {
-  .hover-scale {
-    @apply transition-transform duration-200 hover:scale-105;
-  }
-  
-  .neon-box {
-    box-shadow: 0 0 5px theme('colors.purple.700'), 
-                0 0 10px theme('colors.purple.700/50');
-  }
-  
-  .neon-shadow {
-    text-shadow: 0 0 5px theme('colors.purple.400');
-    box-shadow: 0 0 5px theme('colors.purple.700'), 
-                0 0 10px theme('colors.purple.700/50');
-  }
-  
-  .animate-float {
-    animation: float 15s linear infinite;
-  }
-  
-  .animate-text-glow {
-    text-shadow: 0 0 5px theme('colors.purple.400'),
-                 0 0 10px theme('colors.purple.600/70');
-  }
-  
-  .cyberpunk-grid {
-    background-image: 
-      linear-gradient(rgba(130, 40, 245, 0.1) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(130, 40, 245, 0.1) 1px, transparent 1px);
-    background-size: 20px 20px;
-  }
-}
-
-@keyframes float {
-  0% {
-    transform: translateY(0);
-    opacity: 0;
-  }
-  10% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-1000px);
-    opacity: 0;
+    @apply bg-black text-foreground font-roboto;
   }
 }

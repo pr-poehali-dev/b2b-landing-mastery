@@ -63,17 +63,10 @@ export default defineConfig({
           ring: "hsl(var(--sidebar-ring))",
         },
         purple: {
-          50: "#f5f3ff",
-          100: "#ede9fe",
-          200: "#ddd6fe",
-          300: "#c4b5fd",
           400: "#a78bfa",
-          500: "#8b5cf6",
-          600: "#7c3aed",
           700: "#6d28d9",
           800: "#5b21b6",
           900: "#4c1d95",
-          950: "#2e1065",
         },
       },
       borderRadius: {
@@ -82,34 +75,7 @@ export default defineConfig({
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        sans: ["var(--font-sans)", "sans-serif"],
-        mono: ["Share Tech Mono", "monospace"],
-      },
-      keyframes: {
-        "accordion-down": {
-          from: { height: "0", opacity: "0" },
-          to: { height: "var(--radix-accordion-content-height)", opacity: "1" },
-        },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)", opacity: "1" },
-          to: { height: "0", opacity: "0" },
-        },
-        pulse: {
-          '0%, 100%': { opacity: '1' },
-          '50%': { opacity: '0.5' },
-        },
-        float: {
-          '0%': { transform: 'translateY(0)', opacity: '0' },
-          '10%': { opacity: '1' },
-          '90%': { opacity: '1' },
-          '100%': { transform: 'translateY(-1000px)', opacity: '0' },
-        },
-      },
-      animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
-        pulse: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
-        float: "float 15s linear infinite",
+        roboto: ["Roboto", "sans-serif"],
       },
     },
   },
